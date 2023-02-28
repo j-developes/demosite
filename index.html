@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta http-equiv="Content-Security-Policy: default-src 'self'; " />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta Copyright="John Nash" />
+  <link rel="icon" href="css/media/favicon.gif" type="img/gif" />
+  <link rel="stylesheet" type="text/css" href="boot/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="boot/js/bootstrap.min.js"></script>
+  <script src="scripts/script.js" defer></script>
+  <title>Demo</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div role="container" class="container-fluid pt-3 bg-dark text-white row">
+    <header role="banner">
+      <h1>Demo</h1>
+      <nav role="navigation" class="navbar navbar-expand-sm bg-light">
+        <ul class="nav nav-pills">
+          <li role="link" class="nav-item"><a class="nav-link" href="#Firstly">Firstly</a></li>
+          <li role="link" class="nav-item"><a class="nav-link" href="#Furthermore">Furthermore</a></li>
+          <li role="link" class="nav-item"><a class="nav-link" href="#Lastly">Lastly</a></li>
+          <li role="button" description="esthetics only" class="nav-item">
+            <button id="visitors" class="btn">Number of visitors 1</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div role="article" id="Firstly" class="col-lg-6">
+      <h3>Firstly ...</h3>
+      <p>
+        <a title="https://en.wikipedia.org/wiki/Lorem_ipsum" href="https://en.wikipedia.org/wiki/Lorem_ipsum">Lorem ipsum</a>
+        dolor sit amet, consectetur adipiscing elit. Phasellus laoreet
+        risus odio, eget pharetra ante congue vel. Curabitur molestie tellus at
+        iaculis bibendum. Nullam gravida leo quam, fermentum cursus nibh consectetur
+        at. Nulla fringilla non turpis sed eleifend.
+      </p>
+
+      <dl>
+        <dt>Gravity</dt>
+        <hr />
+        <i><span class="badge badge-pill badge-info">Definition</span></i>
+        <dd role="definition">The force that attracts a body toward the center of the earth, or toward any other physical body having mass.</dd>
+      </dl>
+      <q>Gravity keeps us grounded for only so long.</q>
+      <b><i role="note">- Bert McCoy</i></b>
+
+      <br />
+      <br />
+
+      <h3 id="Secondly">Secondly ...</h3>
+      <p>
+        Etiam sed auctor libero. Maecenas mattis faucibus ligula, ac dapibus erat
+        aliquet sodales. Phasellus placerat elementum purus, nec malesuada risus.
+        Maecenas et ullamcorper dui. Etiam lectus massa, fermentum in urna quis,
+        dictum maximus massa. Suspendisse maximus rutrum risus quis molestie.
+        Nullam porta, dolor vitae molestie gravida, augue purus porta tellus,
+        porttitor faucibus elit leo sit amet justo.
+      </p>
+
+      <div description="slide show" role="container" class="carousel slide" data-ride="carousel">
+
+        <div role="container" class="carousel-inner">
+          <div role="border" class="carousel-item active">
+            <img role="img" id="imageDisplayed" src="css/media/drop.gif" alt="drop.gif" />
+          </div>
+        </div>
+
+        <a role="button" description="previous image" class="carousel-control-prev" href="#prev" onclick="prev()">
+          <span description="arrow left" class="carousel-control-prev-icon"></span>
+        </a>
+        <a role="button" description="next image" class="carousel-control-next" href="#next" onclick="next()">
+          <span description="arrow right" role="img" class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+      <p>
+        Nam ut erat et metus maximus porta. Cras porta pharetra lacus vel ultrices.
+        Nulla efficitur laoreet vestibulum. Curabitur convallis tincidunt turpis
+        in hendrerit. Aenean at tincidunt tortor. Class aptent taciti sociosqu
+        ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla justo
+        quam, pretium mattis erat quis, rhoncus porttitor est. In ipsum nisl,
+        fermentum in vulputate ut, accumsan a metus. Vestibulum ac mauris sit amet
+        urna eleifend finibus. Integer non nibh fringilla, faucibus eros ornare,
+        dapibus justo. Mauris consectetur pretium leo. Nullam vitae volutpat dui.
+        Aliquam convallis et urna condimentum dapibus.
+      </p>
+
+      <pre><code>//hello.cpp
+#include &lt;iostream&gt;
+using namespace std;
+
+int main(){
+
+  string[] helloArray = {"hello", "world"};
+
+  for(int i = 0; i &lt; (sizeOf(helloArray)/4), i++){ //checking array size (4 bytes)
+    cout &lt;&lt; helloArray[i];
+  }
+  &lt;&lt; endl;
+  return 0;
+}</code></pre>
+
+      <h3 id="Lastly">Lastly ...</h3>
+      <p>
+        Etiam sed auctor libero. Maecenas mattis faucibus ligula, ac dapibus erat
+        aliquet sodales. Phasellus placerat elementum purus, nec malesuada risus.
+        Maecenas et ullamcorper dui. Etiam lectus massa, fermentum in urna quis,
+        dictum maximus massa. Suspendisse maximus rutrum risus quis molestie.
+        Nullam porta, dolor vitae molestie gravida, augue purus porta tellus,
+        porttitor faucibus elit leo sit amet justo. Aliquam sed velit vel elit
+        pulvinar tempus viverra vitae diam. Ut ac elementum
+        justo.
+      </p>
+
+      <ul role="list" class="adjustUl">
+        <li>Go</li>
+        <li>Stop</li>
+        <li>Caution</li>
+      </ul>
+    </div>
+
+    <div role="article" class="col-lg-6" id="Furthermore">
+      <h3>Furthermore ...</h3>
+      <p class="lead">
+        Etiam sed auctor libero. Maecenas mattis faucibus ligula, ac dapibus erat
+        aliquet sodales. Phasellus placerat elementum purus, nec malesuada risus.
+        Maecenas et ullamcorper dui. Etiam lectus massa, fermentum in urna quis,
+        dictum maximus massa. Suspendisse maximus rutrum risus quis molestie.
+        Nullam porta, dolor vitae molestie gravida, augue purus porta tellus,
+        porttitor faucibus elit leo sit amet justo. Aliquam sed velit vel elit
+        pulvinar tempus viverra vitae diam. Ut ac elementum
+        justo.
+      </p>
+
+      <div role="container" class="col-lg-6">
+        <canvas description="Graph of simulated visitors" role="canvas" id="mycanvas"></canvas>
+      </div>
+
+      <p>
+        Nulla ac nulla porttitor, sodales mauris vitae, congue nibh. Donec
+        dolor nibh, blandit vel libero sed, condimentum dapibus odio. Praesent
+        fringilla, ante non posuere laoreet, leo magna luctus nunc, molestie
+        suscipit tellus lacus eget nisl.
+        Nulla et euismod sapien, vel accumsan enim. Proin ac arcu orci. Praesent
+        quis dignissim sem, id convallis risus. Integer sit amet nulla in dolor
+        posuere rutrum et id odio. Vestibulum efficitur ipsum ut arcu sodales
+        fermentum. Quisque
+        efficitur </p>
+      <center><math>
+          <mfrac>
+            <mrow>
+              <msqrt>
+                <msub>
+                  <mi>x</mi>
+                  <mn>-1</mn>
+                </msub>
+              </msqrt>
+            </mrow>
+            <mrow>
+              <mrow>
+                <mn>3</mn>
+                <mo>+</mo>
+                <mi>e</mi>
+              </mrow>
+              <mrow>
+                <mn>2</mn>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </math></center>
+      <p>nec interdum. Morbi porttitor sapien in maximus
+        efficitur. Etiam consectetur vulputate maximus. Mauris rhoncus porta
+        nulla dignissim tincidunt. Cras est neque, fermentum in neque vitae,
+        porta tempus augue. Fusce
+        pellentesque urna eget nisl rutrum commodo eget quis magna.
+      </p>
+      <h6 role="link" title="https://en.wikipedia.org/wiki/Project_management_triangle"><a href="https://en.wikipedia.org/wiki/Project_management_triangle">Project Comparison Tool</a></h6>
+      <div role="presentation" title="Project comparison tool" id="tool" class="tri"></div>
+
+      <br />
+
+      <center>
+        <div role="button" description="drop down button." class="drop">
+          <span>Cost</span>
+          <div role="container" class="drop-content">
+            <ul role="group">
+              <li><a role="button" description="great" onclick="getCost(10)">😎</a></li>
+              <li><a role="button" description="very good" onclick="getCost(40)">😄</a></li>
+              <li><a role="button" description="good" onclick="getCost(70)">🙂</a></li>
+              <li><a role="button" description="fair" onclick="getCost(100)">😐</a></li>
+              <li><a role="button" description="bad" onclick="getCost(130)">😕</a></li>
+              <li><a role="button" description="very bad" onclick="getCost(160)">😢</a></li>
+              <li><a role="button" description="horrible" onclick="getCost(190)">😱</a></li>
+            </ul>
+          </div>
+        </div>
+        <div role="container" class="drop">
+          <span>Time</span>
+          <div role="group" class="drop-content">
+            <ul>
+              <li><a role="button" description="great" onclick="getTime(10)">😎</a></li>
+              <li><a role="button" description="very good" onclick="getTime(40)">😄</a></li>
+              <li><a role="button" description="good" onclick="getTime(70)">🙂</a></li>
+              <li><a role="button" description="fair" onclick="getTime(100)">😐</a></li>
+              <li><a role="button" description="bad" onclick="getTime(130)">😕</a></li>
+              <li><a role="button" description="very bad" onclick="getTime(170)">😢</a></li>
+              <li><a role="button" description="horrible" onclick="getTime(190)">😱</a></li>
+            </ul>
+          </div>
+        </div>
+        <div role="container" class="drop">
+          <span>Scope</span>
+          <div role="group" class="drop-content">
+            <ul>
+              <li><a role="button" description="great" onclick="getScope(10)">😎</a></li>
+              <li><a role="button" description="very good" onclick="getScope(40)">😄</a></li>
+              <li><a role="button" description="good" onclick="getScope(70)">🙂</a></li>
+              <li><a role="button" description="fair" onclick="getScope(100)">😐</a></li>
+              <li><a role="button" description="bad" onclick="getScope(130)">😕</a></li>
+              <li><a role="button" description="very bad" onclick="getScope(160)">😢</a></li>
+              <li><a role="button" description="horrible" onclick="getScope(190)">😱</a></li>
+            </ul>
+          </div>
+        </div>
+      </center>
+
+      <br />
+      <br />
+
+      <table role="presentation" description="Best-Probable-Worst equals ...">
+        <tbody>
+          <tr>
+            <td>
+              <math>
+                <mfrac>
+                  <mrow>
+                    <mi>B</mi>
+                    <mo>+</mo>
+                    <mn>4</mn>
+                    <mi>P</mi>
+                    <mo>+</mo>
+                    <mi>W</mi>
+                  </mrow>
+                  <mrow>
+                    <mn>6</mn>
+                  </mrow>
+                </mfrac>
+              </math>
+            </td>
+            <td>
+              <p role="application" description="Answer from input form" id="ans">&nbsp;=&nbsp;0</p>
+            <td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>
+        <a role="link" title="https://en.wikipedia.org/wiki/Best,_worst_and_average_case" href="https://en.wikipedia.org/wiki/Best,_worst_and_average_case">Best-Worst Case</a>
+      </h2>
+      <form role="form" description="see above for answer" method="get" action="index.html#tool">
+        <label for="best">Best Case (B)</label>
+        <input name="best" type="number" size="10" max="10" require />
+        <label for="probable">Propable Case (P)</label>
+        <input name="probable" type="number" size="10" max="10" require />
+        <label for="worst">Worst Case (W)</label>
+        <input name="worst" type="number" size="10" max="10" require />
+      </form>
+
+      <br />
+
+      <center><input type="submit" onclick="submission()" value="Submit" /></center>
+
+      <p>
+        Nam ut erat et metus maximus porta. Cras porta pharetra lacus vel ultrices.
+        Nulla efficitur laoreet vestibulum. Curabitur convallis tincidunt turpis
+        in hendrerit. Aenean at tincidunt tortor. Class aptent taciti sociosqu
+        ad litora torquent
+        per conubia nostra, per inceptos himenaeos. Nulla justo quam, pretium
+        mattis erat quis, rhoncus porttitor est. In ipsum nisl, fermentum in
+        vulputate ut, accumsan a metus.
+      </p>
+    </div>
+
+    <br />
+
+    <footer class="col-lg-12">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <p class="footer">
+                <a href="#">Git Hub</a><br />
+                <a href="privacypolicy.html">Privacy Policy</a></b><br />
+              </p>
+              <address>
+                12345 FakeLake St.<br />
+                FakeCity, FS 1234
+              </address>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <iframe role="iframe" description="map demo" id="mapFrame" src="index.html" width="100%" height="300px" border="0"></iframe>
+              <b id="copy">2022&copy; John Nash. All rights reserved.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </footer>
+  </div>
+ </body>
+</html>
